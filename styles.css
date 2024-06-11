@@ -158,7 +158,7 @@ input[type="submit"]:hover {
 #calendar table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.5em; /* Increase font size for better readability */
+    font-size: 1.3em; /* Increase font size for better readability */
 }
 
 #calendar table th,
