@@ -1,0 +1,109 @@
+/* Reset some basic styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* light grey background for contrast */
+    color: #333; /* dark grey text for readability */
+}
+
+/* Style the header */
+header {
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* black background */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff; /* white text */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #d33; /* red background on hover */
+}
+
+/* Style the main content */
+main {
+    padding: 2em;
+    background-color: #fff; /* white background for content */
+    border: 1px solid #ddd; /* light grey border */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
+}
+
+h1, h2 {
+    color: #d33; /* red headings */
+}
+
+a {
+    color: #d33; /* red links */
+}
+
+/* Style the footer */
+footer {
+    background-color: #000; /* black background */
+    color: #fff; /* white text */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #d33; /* red background */
+    color: #fff; /* white text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #a00; /* darker red on hover */
+}
