@@ -65,32 +65,43 @@ a {
 
 /* Style the main message */
 .main-message {
-    text-align: center;
+    text-align: left;
     margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 10px solid #d33; /* Red left border */
+    border-radius: 8px;
 }
 
 .main-message h2 {
     font-size: 2.5em;
     color: #d33; /* red */
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.main-message .intro {
-    font-size: 1.5em;
+.main-message p,
+.main-message ul {
+    font-size: 1.2em;
     color: #333; /* dark grey */
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-.main-message .mission {
-    font-size: 1.2em;
-    color: #4CAF50; /* green */
-    margin-bottom: 20px;
+.main-message ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
 
-.main-message .call-to-action {
-    font-size: 1.2em;
-    color: #000; /* black */
-    font-weight: bold;
+.main-message ul li {
+    margin-bottom: 10px;
+}
+
+.main-message ul li::before {
+    content: "• ";
+    color: #d33; /* red bullet points */
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 
 /* Style the footer */
