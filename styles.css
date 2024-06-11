@@ -56,11 +56,11 @@ main {
 }
 
 h1, h2 {
-    color: #006400; /* Palestinian green */
+    color: #fff; /* white text */
 }
 
 a {
-    color: #006400; /* Palestinian green */
+    color: #fff; /* white text */
 }
 
 /* Style the main message */
