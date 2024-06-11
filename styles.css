@@ -13,7 +13,7 @@ body {
 
 /* Style the header */
 header {
-    background-color: #000; /* black background */
+    background-color: #006400; /* Palestinian green */
     color: #fff; /* white text */
     padding: 1em 0;
     text-align: center;
@@ -24,7 +24,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #000; /* black background */
+    background-color: #006400; /* Palestinian green */
     text-align: center;
 }
 
