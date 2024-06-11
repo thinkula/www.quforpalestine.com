@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Fill in the days of the month
     for (let i = 1; i <= daysInMonth; i++) {
-        calendarHTML += `<td>${i}</td>`;
+        calendarHTML += `<td><button class="calendar-date" data-day="${i}">${i}</button></td>`;
         if ((firstDayOfMonth.getDay() + i) % 7 === 0) {
             calendarHTML += `</tr><tr>`;
         }
@@ -40,4 +40,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Insert the calendar HTML into the calendar element
     calendar.innerHTML = calendarHTML;
+
+    // Add event listeners to date buttons
+    const dateButtons = document.querySelectorAll('.calendar-date');
+    dateButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const selectedDate = button.dataset.day;
+            alert(`You selected ${monthNames[today.getMonth()]} ${selectedDate}`);
+            // You can add code here to fetch and display events for the selected date
+        });
+    });
 });
