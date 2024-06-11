@@ -56,11 +56,11 @@ main {
 }
 
 h1, h2 {
-    color: #d33; /* red headings */
+    color: #006400; /* Palestinian green */
 }
 
 a {
-    color: #d33; /* red links */
+    color: #006400; /* Palestinian green */
 }
 
 /* Style the main message */
@@ -147,9 +147,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #a00; /* darker red on hover */
-}
-
-/* Palestinian Green */
-.palestinian-green {
-    color: #006400; /* Dark green */
 }
