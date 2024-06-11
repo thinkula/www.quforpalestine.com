@@ -148,3 +148,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #a00; /* darker red on hover */
 }
+
+/* Palestinian Green */
+.palestinian-green {
+    color: #006400; /* Dark green */
+}
