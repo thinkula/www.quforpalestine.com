@@ -1,41 +1,43 @@
-/* Add your calendar styles here */
-#calendar {
-    width: 80%; /* Adjust the width of the calendar */
-    margin: 0 auto; /* Center the calendar horizontally */
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const calendar = document.getElementById("calendar");
 
-#calendar table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1.2em; /* Increase font size for better readability */
-}
+    // Get the current date
+    const today = new Date();
 
-#calendar table th,
-#calendar table td {
-    padding: 15px; /* Increase cell padding for larger cells */
-    text-align: center;
-    border: 1px solid #ddd;
-}
+    // Month names array
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-#calendar table th {
-    background-color: #333; /* Black background for table headers */
-    color: #fff; /* White text color for table headers */
-}
+    // Generate the calendar HTML
+    let calendarHTML = `<h2>${monthNames[today.getMonth()]} ${today.getFullYear()}</h2>`;
+    calendarHTML += `<table><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>`;
 
-#calendar table td {
-    background-color: #fff; /* White background for table cells */
-}
+    // Get the first day of the month
+    const firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
 
-#calendar table td:hover {
-    background-color: #f9f9f9; /* Light grey background on hover */
-}
+    // Get the number of days in the month
+    const daysInMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
 
-#calendar table td.today {
-    background-color: #4CAF50; /* Green color for today's date */
-    color: #fff; /* White text color */
-}
+    // Fill in the blank cells before the first day of the month
+    for (let i = 0; i < firstDayOfMonth.getDay(); i++) {
+        calendarHTML += `<td></td>`;
+    }
 
-#calendar table td.event {
-    background-color: #d33; /* Red color for event dates */
-    color: #fff; /* White text color */
-}
+    // Fill in the days of the month
+    for (let i = 1; i <= daysInMonth; i++) {
+        calendarHTML += `<td>${i}</td>`;
+        if ((firstDayOfMonth.getDay() + i) % 7 === 0) {
+            calendarHTML += `</tr><tr>`;
+        }
+    }
+
+    // Fill in the blank cells after the last day of the month
+    const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth(), daysInMonth);
+    for (let i = lastDayOfMonth.getDay() + 1; i < 7; i++) {
+        calendarHTML += `<td></td>`;
+    }
+
+    calendarHTML += `</tr></table>`;
+
+    // Insert the calendar HTML into the calendar element
+    calendar.innerHTML = calendarHTML;
+});
