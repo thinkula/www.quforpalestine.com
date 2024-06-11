@@ -63,6 +63,36 @@ a {
     color: #d33; /* red links */
 }
 
+/* Style the main message */
+.main-message {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main-message h2 {
+    font-size: 2.5em;
+    color: #d33; /* red */
+    margin-bottom: 20px;
+}
+
+.main-message .intro {
+    font-size: 1.5em;
+    color: #333; /* dark grey */
+    margin-bottom: 20px;
+}
+
+.main-message .mission {
+    font-size: 1.2em;
+    color: #4CAF50; /* green */
+    margin-bottom: 20px;
+}
+
+.main-message .call-to-action {
+    font-size: 1.2em;
+    color: #000; /* black */
+    font-weight: bold;
+}
+
 /* Style the footer */
 footer {
     background-color: #000; /* black background */
@@ -101,4 +131,9 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #a00; /* darker red on hover */
+}
