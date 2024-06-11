@@ -101,9 +101,4 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-    background-color: #a00; /* darker red on hover */
-}
+    margin-top: 
