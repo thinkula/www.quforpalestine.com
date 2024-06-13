@@ -6,8 +6,8 @@ body, h1, h2, p, ul {
 
 /* Set body font and background color */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4; /* light grey background for contrast */
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6; /* light pink background for contrast */
     color: #333; /* dark grey text for readability */
 }
 
@@ -20,7 +20,7 @@ body {
 
 /* Style the header */
 header {
-    background-color: #006400; /* Palestinian green */
+    background-color: #28a745; /* Watermelon rind green */
     color: #fff; /* white text */
     padding: 1em 0;
     text-align: center;
@@ -31,7 +31,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #006400; /* Palestinian green */
+    background-color: #28a745; /* Watermelon rind green */
     text-align: center;
 }
 
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #d33; /* red background on hover */
+    background-color: #ff6347; /* watermelon flesh pink/red on hover */
 }
 
 /* Style the main content */
@@ -79,7 +79,7 @@ h1 {
 }
 
 h2 {
-    color: #333; /* dark grey text */
+    color: #28a745; /* Watermelon rind green text */
     margin-bottom: 1em;
     font-size: 2.5em;
 }
@@ -124,7 +124,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #d33; /* red background */
+    background-color: #ff6347; /* watermelon flesh pink/red background */
     color: #fff; /* white text */
     border: none;
     padding: 10px 20px;
@@ -134,7 +134,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #a00; /* darker red on hover */
+    background-color: #cc4c39; /* darker watermelon flesh red on hover */
 }
 
 /* Add your calendar styles here */
@@ -157,7 +157,7 @@ input[type="submit"]:hover {
 }
 
 #calendar table th {
-    background-color: #333; /* Black background for table headers */
+    background-color: #000; /* Black background for table headers (seeds) */
     color: #fff; /* White text color for table headers */
 }
 
