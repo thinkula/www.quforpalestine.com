@@ -55,8 +55,13 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
 }
 
-h1, h2 {
+h1 {
     color: #fff; /* white text */
+}
+
+h2 {
+    color: #333; /* dark grey text */
+    margin-bottom: 1em;
 }
 
 a {
@@ -189,4 +194,10 @@ input[type="submit"]:hover {
 #calendar table td.event {
     background-color: #d33; /* Red color for event dates */
     color: #fff; /* White text color */
+}
+
+/* Specific styles for the About page */
+main p {
+    margin-bottom: 1.5em; /* Increase the margin between paragraphs */
+    text-align: justify;
 }
