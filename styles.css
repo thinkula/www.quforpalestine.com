@@ -4,11 +4,15 @@ body, h1, h2, p, ul {
     padding: 0;
 }
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Set body font and background color */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffe6e6; /* light pink background for contrast */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* light grey background for contrast */
     color: #333; /* dark grey text for readability */
+    line-height: 1.6;
 }
 
 /* Container */
@@ -20,10 +24,16 @@ body {
 
 /* Style the header */
 header {
-    background-color: #28a745; /* Watermelon rind green */
+    background-color: #006400; /* Palestinian green */
     color: #fff; /* white text */
     padding: 1em 0;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
 /* Style the navigation */
@@ -31,7 +41,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #28a745; /* Watermelon rind green */
+    background-color: #006400; /* Palestinian green */
     text-align: center;
 }
 
@@ -45,10 +55,12 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #ff6347; /* watermelon flesh pink/red on hover */
+    background-color: #d33; /* red background on hover */
+    border-radius: 4px;
 }
 
 /* Style the main content */
@@ -59,40 +71,63 @@ main {
     margin: 20px auto;
     max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow */
-}
-
-/* Hero section */
-.hero {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
 }
 
 h1 {
     color: #fff; /* white text */
+    margin-bottom: 1em;
 }
 
 h2 {
-    color: #28a745; /* Watermelon rind green text */
+    color: #333; /* dark grey text */
     margin-bottom: 1em;
-    font-size: 2.5em;
-}
-
-/* Content section */
-.content p {
-    margin-bottom: 1.5em; /* Increase the margin between paragraphs */
-    text-align: justify;
-    line-height: 1.8;
+    font-size: 2em;
 }
 
 a {
-    color: #fff; /* white text */
+    color: #006400; /* Palestinian green text */
+}
+
+/* Style the main message */
+.main-message {
+    text-align: left;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 10px solid #d33; /* Red left border */
+    border-radius: 8px;
+}
+
+.main-message h2 {
+    font-size: 2.5em;
+    color: #d33; /* red */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-message p,
+.main-message ul {
+    font-size: 1.2em;
+    color: #333; /* dark grey */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.main-message ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.main-message ul li {
+    margin-bottom: 10px;
+}
+
+.main-message ul li::before {
+    content: "• ";
+    color: #d33; /* red bullet points */
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 
 /* Style the footer */
@@ -101,6 +136,9 @@ footer {
     color: #fff; /* white text */
     text-align: center;
     padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 /* Form styling */
@@ -111,6 +149,7 @@ form {
 label {
     display: block;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 input[type="text"],
@@ -121,20 +160,22 @@ textarea {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type="submit"] {
-    background-color: #ff6347; /* watermelon flesh pink/red background */
+    background-color: #d33; /* red background */
     color: #fff; /* white text */
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #cc4c39; /* darker watermelon flesh red on hover */
+    background-color: #a00; /* darker red on hover */
 }
 
 /* Add your calendar styles here */
@@ -157,7 +198,7 @@ input[type="submit"]:hover {
 }
 
 #calendar table th {
-    background-color: #000; /* Black background for table headers (seeds) */
+    background-color: #333; /* Black background for table headers */
     color: #fff; /* White text color for table headers */
 }
 
@@ -177,4 +218,38 @@ input[type="submit"]:hover {
 #calendar table td.event {
     background-color: #d33; /* Red color for event dates */
     color: #fff; /* White text color */
+}
+
+/* Specific styles for the About page */
+main p {
+    margin-bottom: 1.5em; /* Increase the margin between paragraphs */
+    text-align: justify;
+}
+
+/* Button styling */
+.btn {
+    background-color: #006400; /* Palestinian green */
+    color: #fff; /* white text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004d00; /* darker green on hover */
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
