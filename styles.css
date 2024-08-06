@@ -263,8 +263,8 @@ main p {
 
 /* Button styling */
 .btn {
-    background-color: #006400; /* Palestinian green */
-    color: #fff; /* white text */
+    background-color: #d33; /* Red background */
+    color: #fff; /* White text */
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -272,6 +272,27 @@ main p {
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
+
+.btn:hover {
+    background-color: #a00; /* Darker red on hover */
+}
+
+/* Style for input submit buttons */
+input[type="submit"] {
+    background-color: #d33; /* Red background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a00; /* Darker red on hover */
+}
+
 
 .btn:hover {
     background-color: #004d00; /* darker green on hover */
