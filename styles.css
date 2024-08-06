@@ -261,21 +261,22 @@ main p {
     text-align: justify;
 }
 
-/* Button styling */
-.btn {
-    background-color: #d33; /* Red background */
+/* Navigation styles */
+nav ul li a {
     color: #fff; /* White text */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
     text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
     font-weight: bold;
+    background-color: #000; /* Black background for buttons */
+    border-radius: 4px; /* Rounded corners */
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #a00; /* Darker red on hover */
+nav ul li a:hover {
+    background-color: #d33; /* Red background on hover */
 }
+
 
 /* Style for input submit buttons */
 input[type="submit"] {
