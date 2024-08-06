@@ -57,17 +57,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White text */
+    color: #000; /* Change text color to black */
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
     font-weight: bold;
+    background-color: #fff; /* White background for buttons */
+    border-radius: 4px; /* Rounded corners */
     transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
     background-color: #d33; /* Red background on hover */
-    border-radius: 4px;
+    color: #fff; /* White text on hover */
 }
 
 /* Style the main content */
@@ -261,57 +263,7 @@ main p {
     text-align: justify;
 }
 
-/* Navigation styles */
-nav ul li a {
-    color: #fff; /* White text */
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    font-weight: bold;
-    background-color: #000; /* Black background for buttons */
-    border-radius: 4px; /* Rounded corners */
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #d33; /* Red background on hover */
-}
-
-
-/* Style for input submit buttons */
-input[type="submit"] {
-    background-color: #d33; /* Red background */
-    color: #fff; /* White text */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #a00; /* Darker red on hover */
-}
-
-
-/* Style for input submit buttons */
-input[type="submit"] {
-    background-color: #d33; /* Red background */
-    color: #fff; /* White text */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #a00; /* Darker red on hover */
-}
-
-
+/* Button styling */
 .btn:hover {
     background-color: #004d00; /* darker green on hover */
 }
