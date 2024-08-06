@@ -178,36 +178,64 @@ input[type="submit"]:hover {
     background-color: #a00; /* darker red on hover */
 }
 
-/* Add your calendar styles here */
+/* Calendar styling */
 #calendar {
-    width: 90%; /* Adjust the width of the calendar */
-    margin: 0 auto; /* Center the calendar horizontally */
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#calendar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 #calendar table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1.3em; /* Increase font size for better readability */
+    font-size: 1.2em;
 }
 
 #calendar table th,
 #calendar table td {
-    padding: 20px; /* Increase cell padding for larger cells */
+    padding: 10px;
     text-align: center;
     border: 1px solid #ddd;
 }
 
 #calendar table th {
-    background-color: #333; /* Black background for table headers */
-    color: #fff; /* White text color for table headers */
+    background-color: #006400; /* Palestinian green */
+    color: #fff;
 }
 
 #calendar table td {
-    background-color: #fff; /* White background for table cells */
+    background-color: #f9f9f9;
+    position: relative;
 }
 
 #calendar table td:hover {
-    background-color: #f9f9f9; /* Light grey background on hover */
+    background-color: #e0e0e0;
+}
+
+#calendar .calendar-date {
+    background: none;
+    border: none;
+    color: #006400; /* Palestinian green */
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#calendar .calendar-date:hover {
+    background-color: #d33; /* red background on hover */
+    color: #fff; /* white text */
+    border-radius: 4px;
 }
 
 #calendar table td.today {
