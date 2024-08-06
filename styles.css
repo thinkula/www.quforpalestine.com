@@ -1,12 +1,5 @@
-/* Reset some basic styles */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
 
 /* Set body font and background color */
 body {
@@ -25,37 +18,29 @@ body {
 
 /* Style the header */
 header {
-    background: linear-gradient(to right, #006400, #228B22); /* Gradient green background */
+    background: linear-gradient(135deg, #000 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #000 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #000 25%, transparent 25%),
+                linear-gradient(45deg, #000 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #006400; /* Palestinian green */
     color: #fff; /* white text */
     padding: 1em 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    overflow: hidden;
 }
 
 header h1 {
-    font-family: 'Teko', sans-serif;
     font-size: 2.5em;
     margin-bottom: 0.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-header::after {
-    content: '';
-    background: url('path-to-your-image.jpg') no-repeat center center; /* Replace with an actual path */
-    background-size: cover;
-    opacity: 0.1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 0;
-}
-
-header h1, nav {
-    position: relative;
-    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff; /* white text */
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    padding: 0.5em 1em;
+    border-radius: 8px;
 }
 
 /* Style the navigation */
@@ -63,8 +48,9 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: transparent; /* Make navigation background transparent */
+    background: rgba(0, 0, 0, 0.7); /* semi-transparent black background */
     text-align: center;
+    border-radius: 8px;
 }
 
 nav ul li {
@@ -78,6 +64,7 @@ nav ul li a {
     padding: 10px 20px;
     display: inline-block;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -97,7 +84,7 @@ main {
 }
 
 h1 {
-    color: #333; /* dark grey text */
+    color: #fff; /* white text */
     margin-bottom: 1em;
 }
 
@@ -133,7 +120,7 @@ a {
     font-size: 1.2em;
     color: #333; /* dark grey */
     margin-bottom: 20px;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .main-message ul {
