@@ -32,17 +32,18 @@ header {
     overflow: hidden;
 }
 
+/* Added red accent to the header */
 header h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
     font-family: 'Teko', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: #fff; /* white text */
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    background: rgba(255, 0, 0, 0.3); /* semi-transparent red background */
     padding: 0.5em 1em;
     border-radius: 8px;
+    border: 2px solid #d33; /* Red border */
 }
-
 /* Style the navigation */
 nav ul {
     list-style-type: none;
