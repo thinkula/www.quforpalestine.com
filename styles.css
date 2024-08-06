@@ -1,64 +1,54 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
 
+/* Reset some basic styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
 /* Set body font and background color */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* light grey background for contrast */
+    color: #333; /* dark grey text for readability */
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
 header {
-    background-color: #006400; /* Palestinian green */
-    color: #fff; /* white text */
+    position: relative;
+}
+
+/* Flag background */
+.header-flag {
+    background: linear-gradient(to right, #c8102e 33.33%, #000 33.33%, #000 66.67%, #007a33 66.67%);
     padding: 1em 0;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 
-/* Add a flag-inspired design */
-.header-flag {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Place it behind the header content */
-}
-
-.header-flag div {
-    height: 33.33%; /* Equal height sections for the flag */
-}
-
-.header-flag .black {
-    background-color: #000; /* Black section of the flag */
-}
-
-.header-flag .white {
-    background-color: #fff; /* White section of the flag */
-}
-
-.header-flag .green {
-    background-color: #006400; /* Green section of the flag */
-}
-
-.header-flag .red {
-    background-color: #d33; /* Red section of the flag */
-    height: 8%; /* Thinner red section */
-}
-
-/* Header text styling */
-header h1 {
+/* Header title */
+.header-flag h1 {
     font-size: 2.5em;
-    margin-bottom: 0.5em;
+    color: #fff; /* White text for contrast */
+    margin: 0;
     font-family: 'Teko', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 1; /* Ensure text is above the background */
 }
 
-/* Style the navigation */
+/* Navigation styles */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background: rgba(0, 0, 0, 0.7); /* semi-transparent black background */
     text-align: center;
-    border-radius: 8px;
 }
 
 nav ul li {
@@ -67,7 +57,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* white text */
+    color: #fff; /* White text */
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
@@ -76,7 +66,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #d33; /* red background on hover */
+    background-color: #d33; /* Red background on hover */
     border-radius: 4px;
 }
 
