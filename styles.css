@@ -15,11 +15,18 @@ body {
     line-height: 1.6;
 }
 
-/* Logo */
+/* Logo container */
+.logo-container {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center logo vertically */
+    justify-content: flex-end; /* Align logo to the right */
+    height: 100px; /* Increase height to make space for the logo */
+}
+
+/* Adjust logo size if needed */
 .logo {
-    height: 50px; /* Adjust as needed */
-    margin-right: 10px; /* Space between logo and title */
-    vertical-align: middle; /* Aligns the logo vertically with text */
+    height: 80px; /* Adjust height for better visibility */
+    margin-left: 20px; /* Space between text and logo */
 }
 
 /* Container */
