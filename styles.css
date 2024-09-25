@@ -15,6 +15,13 @@ body {
     line-height: 1.6;
 }
 
+/* Logo */
+.logo {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px; /* Space between logo and title */
+    vertical-align: middle; /* Aligns the logo vertically with text */
+}
+
 /* Container */
 .container {
     max-width: 1200px;
