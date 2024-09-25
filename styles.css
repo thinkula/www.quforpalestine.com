@@ -19,14 +19,13 @@ body {
 .logo-container {
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Center logo vertically */
-    justify-content: flex-end; /* Align logo to the right */
-    height: 100px; /* Increase height to make space for the logo */
+    justify-content: flex-start; /* Align logo to the left */
+    margin-right: 20px; /* Space between logo and text */
 }
 
 /* Adjust logo size if needed */
 .logo {
     height: 80px; /* Adjust height for better visibility */
-    margin-left: 20px; /* Space between text and logo */
 }
 
 /* Container */
