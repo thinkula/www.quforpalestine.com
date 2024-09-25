@@ -15,12 +15,17 @@ body {
     line-height: 1.6;
 }
 
+/* Header styles */
+.header-flag {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center all content horizontally */
+    padding: 1em 0; /* Padding for the header */
+}
+
 /* Logo container */
 .logo-container {
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center logo vertically */
-    justify-content: flex-start; /* Align logo to the left */
-    margin-right: 20px; /* Space between logo and text */
+    margin-right: 15px; /* Space between logo and title */
 }
 
 /* Adjust logo size if needed */
